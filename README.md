@@ -80,6 +80,17 @@ npm start
 The backend will run at:
 http://localhost:4000
 
+## Frontend
+Open the frontend folder
+
+
+cd ../frontend
+Serve or open index.html in your browser.
+
+You can just double-click the file, or
+
+Use a simple static server (e.g. npx serve .)
+
 
 ## Usage
 # Login
@@ -96,7 +107,8 @@ Click Fetch Secure Data
 
 You should see: Hello user 1!
 
-Security Notes & Next Steps
+## Security Notes & Next Steps
+
 HTTPS: Always serve over HTTPS in production.
 
 HttpOnly Cookies: Consider storing JWTs in secure, HttpOnly cookies to mitigate XSS.
