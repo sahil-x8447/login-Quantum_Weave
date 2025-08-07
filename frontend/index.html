@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="login-form" novalidate>
+      <h2>Log In</h2>
+
+      <div class="form-group">
+        <label for="user">Username or Email</label>
+        <input type="text" id="user" name="user" required />
+        <small class="error" id="user-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="8" />
+        <small class="error" id="pass-error"></small>
+      </div>
+
+      <button type="submit">Log In</button>
+      <div id="form-feedback" class="feedback"></div>
+    </form>
+
+    <!-- Secure-data section -->
+    <button id="fetch-secure" class="secure-btn">Fetch Secure Data</button>
+    <div id="secure-output" class="secure-output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
